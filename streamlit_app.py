@@ -20,6 +20,7 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+st.title("Channelrhodopsins DB")
 key_column = "opsin"  # Replace with the actual key column name
 column_to_add = "sequence"  # Replace with the column name you want to add from the secondary CSV
 
