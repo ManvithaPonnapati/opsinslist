@@ -29,9 +29,9 @@ df2 = pd.read_csv("opsins.csv")
 # Load the CSV file
 df = pd.read_csv(csv_path)
   # Drop the query_id column
-df["mutation"] = df["unaligned_mutation"]
+# df["mutation"] = df["unaligned_mutation"]
 df = df.merge(df2[[key_column, column_to_add]], on=key_column, how="left")
-df = df.drop(columns=["query_id","unaligned_mutation"])
+df = df.drop(columns=["query_id"])
 
 nice = ["more beneficial","more detrimental","neutral","Functional","Beneficial","Neutral"]
 labels = []
